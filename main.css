@@ -25,6 +25,12 @@ ul {
   margin-right: 6px;
 }
 
+.wm-folder-down::before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .wm-folderItems {
   display: none;
 }
