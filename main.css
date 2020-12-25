@@ -2,6 +2,10 @@ h1 {
   font-size: 30px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .fundoVermelho {
   background-color: rgb(255, 0, 0);
 }
@@ -10,8 +14,23 @@ h1 {
   font-weight: bold;
 }
 
+.wm-folder {
+  cursor: pointer;
+}
+
+.wm-folder::before {
+  color: black;
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.wm-folderItems {
+  display: none;
+}
+
 #textoPrincipal {
-  background-color: #000;
+  background-color: black;
   color: #ffffff;
   font-size: 30px;
   padding: 10px;
