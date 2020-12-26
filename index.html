@@ -9,12 +9,13 @@
   </head>
 
   <body>
-    <header>
+    <header id='inicio'>
       <h1>Bolinhos da Té</h1>
       <h2>Os melhores bolinhos de Irajá</h2>
     </header>
     <nav>
-      <a href="http://youtube.com">Youtube</a> |
+      <a href="http://youtube.com" target="_blank">Youtube</a> |
+      <a href="#contato">Contato</a> |
       <a href wm-nav="conteudoInserido.html">Clique aqui para uma surpresa</a>
     </nav>
     <br>
@@ -24,6 +25,62 @@
     </section>
     <section id='conteudoInserido'>
 
+    </section>
+    <br>
+    <section>
+      <table border='2'>
+        <thead>
+          <tr>
+            <th>Bolinho</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cenoura</td>
+            <td>R$ 2,00</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Cenoura com cobertura</td>
+            <td>R$ 2,50</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>Chocolate</td>
+            <td>R$ 2,00</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>Chocolate com cobertura</td>
+            <td>R$ 2,50</td>
+            <td>40</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Bolinhos em estoque</td>
+            <td>280</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <br>
+    <section>
+      <h3>Deixe aqui sua sugestão</h3>
+      <form action="http://localhost:3003/usuarios" method="POST">
+        <input type="text" name="nome">
+        <button>Enviar</button>
+        <h3>Qual seu sabor preferido?</h3>
+        <select name="estado">
+          <option value="">Selecione</option>
+          <option value="ac">Cenoura</option>
+          <option value="ba">Chocolate</option>
+          <option value="ce">Coco</option>
+        </select>
+        <button>Enviar</button>
+      </form>
     </section>
     <br>
     <aside class='negrito'>
@@ -64,6 +121,8 @@
         <p>Praça Seca, Rua Barão, 717</p>
       </address>
       <p>Telefone: (21) 96836-3001</p>
+      <a href="mailto:brianleite98@gmail.com" id='contato'>Entre em contato conosco clicando aqui!</a> |
+      <a href="#inicio">Voltar ao início</a>
     </footer>
   </body>
   <script>

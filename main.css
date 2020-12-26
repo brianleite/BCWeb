@@ -1,5 +1,14 @@
+:root {
+  background: url(https://i.pinimg.com/originals/1b/b4/62/1bb46265b5bb8f239b1a9de93d61a5c4.jpg)
+}
+
 h1 {
   font-size: 30px;
+}
+
+input, select {
+        display: inline;
+        margin-bottom: 10px;
 }
 
 ul {
@@ -11,6 +20,29 @@ ul {
 }
 
 .negrito {
+  font-weight: bold;
+}
+
+table {
+        border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead tr {
+  border-bottom: solid 3px gray;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #dedede;
+}
+
+tfoot {
+  background-color: gray;
+  color: #ffffff;
   font-weight: bold;
 }
 
