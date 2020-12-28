@@ -6,6 +6,12 @@ h1 {
   font-size: 30px;
 }
 
+h1::first-letter {
+  color: rgb(193, 101, 183);
+  font-size: 40px;
+  font-weight: bold;
+}
+
 input, select {
   display: inline;
 }
@@ -98,11 +104,4 @@ tfoot {
 
 .wm-folderItems {
   display: none;
-}
-
-#textoPrincipal {
-  background-color: black;
-  color: #ffffff;
-  font-size: 30px;
-  padding: 10px;
 }
