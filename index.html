@@ -5,154 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolinhos da Té</title>
+    <link href='https://fonts.googleapis.com/css?family=Redressed' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
     <header>
-      <h1>Bolinhos da Té</h1>
-      <h2>Os melhores bolinhos de Irajá</h2>
+      <a href='#inicio'><h1>Bolinhos da Té</h1></a>
+      <img src="https://assets.stickpng.com/thumbs/58661b837d90850fc3ce2a6a.png" alt="Bolo">
+      <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#localizacao">Onde vendemos</a>
+        <a href="#identificacao">Quem somos</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
-    <nav>
-      <a href="http://youtube.com" target="_blank">Youtube</a> |
-      <a href="#contato">Contato</a> |
-      <a href wm-nav="conteudoInserido.html">Clique aqui para uma surpresa</a>
-    </nav>
-    <br>
-    <div>
-      <p>1 Bolinho = R$ 2,00</p>
-      <p>10 Bolinhos = R$ 15,00</p>
-    </div>
-    <div id='conteudoInserido'>
+    <main>
 
-    </div>
-    <br>
-    <div>
-      <table border='2'>
-        <thead>
-          <tr>
-            <th>Bolinho</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cenoura</td>
-            <td>R$ 2,00</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Cenoura com cobertura</td>
-            <td>R$ 2,50</td>
-            <td>70</td>
-          </tr>
-          <tr>
-            <td>Chocolate</td>
-            <td>R$ 2,00</td>
-            <td>120</td>
-          </tr>
-          <tr>
-            <td>Chocolate com cobertura</td>
-            <td>R$ 2,50</td>
-            <td>40</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Bolinhos em estoque</td>
-            <td>280</td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <br>
-    <div>
-      <h3>Deixe aqui sua sugestão</h3>
-      <form action="http://localhost:3003/usuarios" method="POST">
-        <input type="text" name="sugestao">
-        <button>Enviar</button>
-        <h3>Qual seu sabor preferido?</h3>
-        <select name="sabor">
-          <option value="">Selecione</option>
-          <option value="cenoura">Cenoura</option>
-          <option value="chocolate">Chocolate</option>
-          <option value="coco">Coco</option>
-        </select>
-        <button>Enviar</button>
-      </form>
-    </div>
-    <h3>Aprenda a fazer bolo você também!</h3>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/-pRC-FQXLEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h3>Sobre Stephany</h3>
-    <div class="sobreTe">
-      <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t1.0-9/104171552_3053850964696566_4948970328955295018_o.jpg?_nc_cat=110&ccb=2&_nc_sid=174925&_nc_ohc=_qdQWwI3yPEAX_Xxblh&_nc_ht=scontent.fbhz1-1.fna&oh=503dfe5465ca2e2d2c95bd8143dff4da&oe=600AF25E" alt="Avatar" class="avatarTe">
-      <div class="overlay">
-        <div class="textoOverlay">Me chamo Stephany Christiny, faço Ciências Biológicas na UFRJ e sou apaixonada por bolos!</div>
-      </div>
-    </div>
-    <br>
-    <aside class='negrito'>
-      <ul style="list-style-type: none; padding: 0; margin: 0">
-        <li><span class='wm-folder'>Bolinhos</span>
-            <ul class='wm-folderItems'>
-                <li><span class='wm-folder'>Sem cobertura</span>
-                    <ul class='wm-folderItems'>
-                        <li>Fubá</li>
-                        <li>Chocolate</li>
-                        <li>Coco</li>
-                    </ul>
-                </li>
-                <li><span class='wm-folder'>Com cobertura</span>
-                    <ul class='wm-folderItems'>
-                        <li>Aipim</li>
-                        <li>Brigadeiro</li>
-                        <li>Cenoura</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><span class='wm-folder'>Bolos de festa</span>
-            <ul class='wm-folderItems'>
-                <li><span class='wm-folder'>Com cobertura</span>
-                    <ul class='wm-folderItems'>
-                        <li>Chocolate</li>
-                        <li>Coco</li>
-                        <li>Romeu e Julieta</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-      </ul>
-    </aside>
-    <footer class='fundoVermelho negrito'>
-      <address>
-        <p>Praça Seca, Rua Barão, 717</p>
-      </address>
-      <p>Telefone: (21) 96836-3001</p>
-      <a href="mailto:brianleite98@gmail.com" id='contato'>Entre em contato conosco clicando aqui!</a> |
-      <a href="#inicio">Voltar ao início</a>
+    </main>
+    <footer>
+
     </footer>
   </body>
+
   <script>
-    document.querySelectorAll('[wm-nav]').forEach(link => {
-      const conteudo = document.getElementById('conteudoInserido')
-
-      link.onclick = function (e) {
-        e.preventDefault()
-        fetch(link.getAttribute('wm-nav'))
-          .then(resp => resp.text())
-          .then(html => conteudo.innerHTML = html)
-      }
-    })
-
-    document.querySelectorAll('.wm-folder').forEach(pasta => {
-      pasta.onclick = function (e) {
-        const ul = pasta.nextElementSibling
-        const d = ul.style.display
-        ul.style.display = d === 'block' ? 'none' : 'block'
-        this.classList.toggle("wm-folder-down")
-      }
-    })
   </script>
 </html>

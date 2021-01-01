@@ -1,107 +1,67 @@
-:root {
-  background: url(https://i.pinimg.com/originals/1b/b4/62/1bb46265b5bb8f239b1a9de93d61a5c4.jpg)
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  font-size: 30px;
+body {
+  background-color: rgba(240, 66, 255, 0.25);
+  min-height: 100vh;
 }
 
-h1::first-letter {
-  color: rgb(193, 101, 183);
-  font-size: 40px;
-  font-weight: bold;
-}
-
-input, select {
-  display: inline;
-}
-
-ul {
-  list-style-type: none;
-}
-
-table {
-        border-collapse: collapse;
-}
-
-th, td {
+header {
+  align-items: center;
+  background-size: 100px;
+  background: url(https://i.pinimg.com/originals/1b/b4/62/1bb46265b5bb8f239b1a9de93d61a5c4.jpg);
+  border-bottom: solid 2px rgb(236, 113, 208);
+  box-sizing: content-box;
+  display: flex;
+  height: 80px;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-thead tr {
-  border-bottom: solid 3px gray;
+header h1 {
+  color: rgb(236, 113, 208);
+  font-family: 'Redressed';
+  font-size: 5em;
   font-weight: bold;
+  text-shadow: 5px 0px black;
 }
 
-tbody tr:hover {
-  background-color: #dedede;
+header > a {
+  text-decoration: none;
 }
 
-tfoot {
-  background-color: gray;
-  color: #ffffff;
-  font-weight: bold;
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
-.avatarTe {
-  border-radius: 10%;
-  display: block;
-  height: auto;
-  width: 300px;
+header img {
+  padding: 10px;
+  width: 100px;
 }
 
-.overlay {
-  background-color: #d26cbc;
-  border-radius: 10%;
-  bottom: 0;
-  height: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  transition: .5s ease;
-  width: 300px;
-}
-
-.sobreTe {
-  position: relative;
-  width: 50%;
-}
-
-
-.sobreTe:hover .overlay {
-  height: 100%;
-}
-
-.textoOverlay {
+header nav a {
+  background-color: red;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
   color: white;
-  font-size: 30px;
-  left: 50%;
-  position: relative;
-  text-align: center;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 20px;
+  padding: 5px;
+  text-decoration: none;
 }
 
-.wm-folder {
-  cursor: pointer;
+header nav a:active {
+  box-shadow: none;
 }
 
-.wm-folder::before {
-  color: black;
-  content: "\25B6";
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.wm-folder-down::before {
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.wm-folderItems {
-  display: none;
+main {
+  margin-top: 102px;
 }
