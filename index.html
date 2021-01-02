@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <html lang="en">
-  <head>
+  <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolinhos da Té</title>
@@ -21,10 +21,65 @@
       </nav>
     </header>
     <main>
+      <div id="inicio" class="ancora"></div>
+      <h2 id="produtos" class="ancora">Produtos</h2>
+      <div class="produtos">
+        <div class="prodCard">
+          <img class="bolo" src="https://www.receitasnestle.com.br/images/default-source/recipes/bolo-de-cenoura-com-cobertura-de-brigadeiro-receitas-nestle.jpg" alt="Bolo de cenoura">
+          <p class="boloCenoura">Bolo de cenoura</p>
+          <p class='preco'>1= R$ 2,00, 10= R$ 16,00.</p>
+        </div>
+        <div class="prodCard">
+            <img class="bolo" src="https://i.pinimg.com/originals/ee/fb/76/eefb76ece80682e112b24b614c523232.jpg" alt="Bolo de chocolate">
+            <p class="boloChocolate">Bolo de chocolate</p>
+            <p class='preco'>1= R$ 3,00, 10= R$ 25,00.</p>
+        </div>
+      </div>
+      <h2 id="localizacao" class="ancora">Onde vendemos</h2>
+      <div class="localizacao">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="1200" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pra%C3%A7a%20seca&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a>
+          </div><style>.mapouter{text-align: center;height:500px;width:100%; z-index: 0;  margin: 0}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1200px; margin-right:auto;margin-left:auto;}</style>
+          </div>
+          <p class="local">Praça Seca, Jacarepaguá</p>
+          <p class="dias">Segunda a sexta (17h-20h) </p>
+      </div>
+      <h2 id="identificacao" class="ancora">Quem somos</h2>
+      <div class="identificacao">
+        <div class="containerId">
+          <img src="https://scontent-gig2-1.xx.fbcdn.net/v/t1.0-9/104171552_3053850964696566_4948970328955295018_o.jpg?_nc_cat=110&ccb=2&_nc_sid=174925&_nc_ohc=VyDqGxGky0gAX9u7D9H&_nc_ht=scontent-gig2-1.xx&oh=43b334df1f5b15dba3f01134a1f41d15&oe=6016CFDE" alt="Foto da Steephany" class="fotoId">
+          <div class="overlay">
+            <div class="descricaoId">Stephany Christiny. Estudante de Ciências Biológicas (UFRJ) e confeiteira.</div>
+          </div>
+        </div>
+        <div class="containerId">
+          <img src="https://scontent.frec8-1.fna.fbcdn.net/v/t1.0-9/67271065_2264156093634322_4467451073778417664_o.jpg?_nc_cat=102&ccb=2&_nc_sid=84a396&_nc_ohc=6PdjIvAyIg8AX8Wu492&_nc_ht=scontent.frec8-1.fna&oh=7a3903e38d3ac8c7b9169a8c01625fc0&oe=601668CF" alt="Foto do Brian" class="fotoId">
+          <div class="overlay">
+            <div class="descricaoId">Brian Leite. Estudante de Ciências Biológicas (UFRJ) e Web Designer.</div>
+          </div>
+        </div>
+      </div>
+      <h2 id="contato" class="ancora">Contato (e-mail)</h2>
+      <div class="contato">
+      <div class="formContato">
+        <form action="mailto:brianleite98@gmail.com" method="post" enctype="text/plain">
+          <label for="nome">Seu nome:</label></label>
+          <input type="text" id="nome" name="nome" placeholder="Escreva seu nome">
 
+          <label for="email">Seu e-mail:</label>
+          <input type="text" id="email" name="email" placeholder="Escreva seu email">
+
+          <label for="mensagem">Sua mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" style="height:200px"></textarea>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
     </main>
     <footer>
-
+      <p>2021 Bolinhos da Té - Nenhum direito reservado</p>
     </footer>
   </body>
 
